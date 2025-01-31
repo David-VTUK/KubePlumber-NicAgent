@@ -1,4 +1,4 @@
-name: Niccheck agent build
+name: Build and publish NIC Agent
 
 on: 
   workflow_dispatch:
