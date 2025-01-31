@@ -1,6 +1,6 @@
 {
 	"name": "go-dev-container",
-    "image": "mcr.microsoft.com/devcontainers/go:1.23-bookworm",
+	"image": "mcr.microsoft.com/devcontainers/go:1.23-bookworm",
 	// Configure tool-specific properties.
 	"customizations": {
 		// Configure properties specific to VS Code.
@@ -10,14 +10,14 @@
 				"streetsidesoftware.code-spell-checker",
 				"redhat.vscode-yaml",
 				"GitHub.copilot",
-                "yzhang.markdown-all-in-one",
+				"yzhang.markdown-all-in-one",
 				"golang.go",
 				"ms-azuretools.vscode-docker",
 				"github.vscode-github-actions"
 			]
 		}
 	},
-    "workspaceFolder": "/workspace",
+	"workspaceFolder": "/workspace",
 	"workspaceMount": "source=${localWorkspaceFolder},target=/workspace,type=bind,Z",
 	"containerUser": "vscode"
 }
