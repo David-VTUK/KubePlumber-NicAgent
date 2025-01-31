@@ -7,9 +7,9 @@ WORKDIR /app
 COPY . .
 
 # Build the binary for the target platform
-RUN GOOS=linux GOARCH=${TARGETARCH} go build -v -o kubeplumber-niccheck ./main.go
+RUN GOOS=linux GOARCH=${TARGETARCH} CGO_ENABLED=0 go build -v -o kubeplumber-niccheck ./main.go
 
-FROM alpine:latest
+FROM golang:1.23-alpine3.21
 
 WORKDIR /root/
 
